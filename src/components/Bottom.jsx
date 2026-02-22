@@ -25,7 +25,7 @@ export default function Bottom() {
     <section
       id="info"
       ref={sectionRef}
-      className="reveal pt-20 pb-8 px-10 max-sm:px-5 sm:max-md:px-8"
+      className="reveal pt-[5rem] pb-[2rem] px-[4rem] max-sm:px-[1.25rem] sm:max-md:px-[2rem]"
     >
       <div className="grid grid-cols-[1fr_1px_1fr] gap-14 max-sm:grid-cols-1 max-sm:gap-10">
         {/* Left — About */}

@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative flex h-screen flex-col justify-end overflow-hidden px-10 pb-9 max-sm:px-5 sm:max-md:px-8">
+      <section className="relative flex h-screen flex-col justify-end overflow-hidden pb-14 px-[4rem] max-sm:px-[1.25rem] sm:max-md:px-[2rem]">
         {/* ── Animated reel background ── */}
         <div className="absolute inset-0 z-0">
           {/* Reel frames */}
