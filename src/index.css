@@ -1,30 +1,91 @@
 @import "tailwindcss";
 
 @theme {
-  --color-coral: #FF6B6B;
-  --color-coral-dark: #E55A5A;
-  --color-coral-light: #FF8A8A;
-  --color-dark: #0A0A0A;
-  --color-dark-card: #141414;
-  --color-dark-border: #1E1E1E;
-  --color-gray-muted: #9CA3AF;
-  --font-heading: "Outfit", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --color-black: #000000;
+  --color-near-black: #0A0A0A;
+  --color-surface: #111111;
+  --color-line: rgba(255, 255, 255, 0.07);
+  --color-white: #F2F0ED;
+  --color-mid: #6B6660;
+  --color-dim: #333028;
+  --color-warm: #C8956A;
+  --color-neon: #C78BFA;
+  --color-neon-glow: rgba(199, 139, 250, 0.15);
+  --color-neon-bright: #D9A5FF;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: var(--font-body);
-  background-color: var(--color-dark);
-  color: #F5F5F5;
+  background: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+a {
+  color: inherit;
+  text-decoration: none;
 }
+
+::selection {
+  background: var(--color-neon);
+  color: var(--color-black);
+}
+
+/* Scroll reveal utility */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.vis {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero animations */
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reelCycle {
+  0%, 100% { opacity: 0; }
+  8%, 22% { opacity: 1; }
+  30% { opacity: 0; }
+}
+
+@keyframes barFill {
+  to { width: 100%; }
+}
+
+/* Placeholder thumbnail gradients */
+.t1 { background: linear-gradient(135deg, #1A1510 0%, #2E2218 50%, #1A1510 100%); }
+.t2 { background: linear-gradient(135deg, #10141A 0%, #18252E 50%, #10141A 100%); }
+.t3 { background: linear-gradient(135deg, #1A100F 0%, #301818 50%, #1A100F 100%); }
+.t4 { background: linear-gradient(135deg, #14160F 0%, #222A18 50%, #14160F 100%); }
+.t5 { background: linear-gradient(135deg, #15101A 0%, #28182E 50%, #15101A 100%); }
+.t6 { background: linear-gradient(135deg, #1A1412 0%, #2A2018 50%, #1A1412 100%); }
+.t7 { background: linear-gradient(135deg, #0F1418 0%, #182028 50%, #0F1418 100%); }
+.t8 { background: linear-gradient(135deg, #181510 0%, #2A2418 50%, #181510 100%); }
+.t9 { background: linear-gradient(135deg, #121015 0%, #201828 50%, #121015 100%); }

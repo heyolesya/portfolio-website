@@ -1,25 +1,19 @@
-import Navbar from './components/Navbar'
+import Nav from './components/Nav'
 import Hero from './components/Hero'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Timeline from './components/Timeline'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Work from './components/Work'
+import Bottom from './components/Bottom'
+import NewFooter from './components/NewFooter'
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Nav />
       <main>
         <Hero />
-        <About />
-        <Portfolio />
-        <Timeline />
-        <Skills />
-        <Contact />
+        <Work />
+        <Bottom />
       </main>
-      <Footer />
+      <NewFooter />
     </>
   )
 }
