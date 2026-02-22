@@ -4,7 +4,7 @@ export const featuredProjects = [
     category: "TV · Live Show",
     filterCat: "tv",
     title: "MTV Unplugged",
-    meta: "Senior Producer · Paramount · CIS & Baltic Region",
+    meta: "Senior Producer · Paramount",
     thumbClass: "t1",
   },
   {
@@ -12,7 +12,7 @@ export const featuredProjects = [
     category: "YouTube",
     filterCat: "youtube",
     title: "Multi-Million Subscriber Channel",
-    meta: "Content Producer · Dark Matter Design · 10 videos/week",
+    meta: "Content Producer · The Infographics Show",
     thumbClass: "t2",
   },
 ];
@@ -31,7 +31,7 @@ export const projects = [
     id: "p2",
     category: "Campaign",
     filterCat: "tv",
-    title: '"This Is Normal"',
+    title: 'This Is Normal',
     details: ["MTV", "Award-Nominated", "Social Campaign"],
     role: "Senior Producer",
     thumbClass: "t4",

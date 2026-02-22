@@ -1,6 +1,6 @@
 export default function Nav() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-100 mix-blend-difference flex items-center justify-between py-6 px-7">
+    <nav className="fixed top-0 left-0 right-0 z-100 mix-blend-difference flex items-center justify-between py-6 px-10 max-sm:px-5 sm:max-md:px-8">
       <a
         href="#"
         className="font-display text-[0.95rem] tracking-[0.18em] uppercase text-white"

@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative flex h-screen flex-col justify-end overflow-hidden px-7 pb-9">
+      <section className="relative flex h-screen flex-col justify-end overflow-hidden px-10 pb-9 max-sm:px-5 sm:max-md:px-8">
         {/* ── Animated reel background ── */}
         <div className="absolute inset-0 z-0">
           {/* Reel frames */}
@@ -130,7 +130,7 @@ export default function Hero() {
               <span className="font-display text-[1.6rem] tracking-wide text-white">
                 60+
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-dim">
+              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Projects
               </span>
             </div>
@@ -138,15 +138,15 @@ export default function Hero() {
               <span className="font-display text-[1.6rem] tracking-wide text-white">
                 600K+
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-dim">
+              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Views
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
               <span className="font-display text-[1.6rem] tracking-wide text-white">
-                9 YRS
+                10 YRS
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-dim">
+              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Experience
               </span>
             </div>
@@ -154,7 +154,7 @@ export default function Hero() {
               <span className="font-display text-[1.6rem] tracking-wide text-white">
                 20+
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-dim">
+              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Music Videos
               </span>
             </div>

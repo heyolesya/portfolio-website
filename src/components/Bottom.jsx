@@ -25,7 +25,7 @@ export default function Bottom() {
     <section
       id="info"
       ref={sectionRef}
-      className="reveal pt-20 pb-8 px-7"
+      className="reveal pt-20 pb-8 px-10 max-sm:px-5 sm:max-md:px-8"
     >
       <div className="grid grid-cols-[1fr_1px_1fr] gap-14 max-sm:grid-cols-1 max-sm:gap-10">
         {/* Left — About */}
@@ -34,7 +34,7 @@ export default function Bottom() {
             About
           </h4>
 
-          <p className="text-[0.88rem] text-mid leading-[1.75] max-w-[460px]">
+          <p className="text-[1.05rem] text-white leading-[1.75] max-w-[460px]">
             <strong className="text-white font-medium">Olesia Petrochenkova</strong> — producer
             with 9 years across TV, YouTube, music, and digital. Paramount/MTV to
             multi-million-sub YouTube channels. I handle every stage from strategy and
