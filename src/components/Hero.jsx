@@ -119,42 +119,39 @@ export default function Hero() {
             <span className="font-medium text-neon">branded content</span>, and{" "}
             <span className="font-medium text-neon">digital</span> — from
             concept through delivery.
-            <span className="mt-1 block text-[0.85rem] text-mid">
-              Los Angeles &amp; Bay Area
-            </span>
           </p>
 
           {/* Right — stats */}
           <div className="flex gap-12 text-right">
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[1.6rem] tracking-wide text-white">
+              <span className="font-display text-[2.2rem] tracking-wide text-white">
                 60+
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
+              <span className="text-[0.85rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Projects
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[1.6rem] tracking-wide text-white">
+              <span className="font-display text-[2.2rem] tracking-wide text-white">
                 600K+
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
+              <span className="text-[0.85rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Views
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[1.6rem] tracking-wide text-white">
+              <span className="font-display text-[2.2rem] tracking-wide text-white">
                 10 YRS
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
+              <span className="text-[0.85rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Experience
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[1.6rem] tracking-wide text-white">
+              <span className="font-display text-[2.2rem] tracking-wide text-white">
                 20+
               </span>
-              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
+              <span className="text-[0.85rem] uppercase tracking-[0.14em] text-[#B0ACA6]">
                 Music Videos
               </span>
             </div>

@@ -37,7 +37,7 @@ export default function Work() {
     <section id="work" className="relative px-[4rem] pt-[6rem] max-sm:px-[1.25rem] sm:max-md:px-[2rem]" ref={sectionRef}>
       {/* Header */}
       <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between py-16 pb-8 border-b border-line mb-8">
-        <span className="font-display text-[0.85rem] tracking-[0.2em] uppercase text-dim">
+        <span className="font-display text-[1.1rem] tracking-[0.2em] uppercase text-white">
           Selected Work
         </span>
 
@@ -46,11 +46,11 @@ export default function Work() {
             <button
               key={f.value}
               onClick={() => setActiveFilter(f.value)}
-              className={`font-body text-[0.68rem] font-medium tracking-[0.06em] uppercase px-3.5 py-1.5 bg-transparent border cursor-pointer transition
+              className={`font-body text-[0.85rem] font-medium tracking-[0.06em] uppercase px-3.5 py-1.5 bg-transparent border cursor-pointer transition
                 ${
                   activeFilter === f.value
                     ? "text-white border-line"
-                    : "text-dim border-transparent hover:text-mid"
+                    : "text-mid border-transparent hover:text-mid"
                 }`}
             >
               {f.label}
@@ -99,7 +99,7 @@ export default function Work() {
         {filteredProjects.map((item) => (
           <div
             key={item.id}
-            className="reveal group grid grid-cols-1 sm:grid-cols-[140px_1fr] md:grid-cols-[minmax(200px,1fr)_2.8fr_1fr] gap-6 items-center py-3 border-b border-line cursor-pointer transition-[background-color] duration-300 hover:bg-white/[0.015]"
+            className="reveal group grid grid-cols-1 sm:grid-cols-[140px_1fr] md:grid-cols-[minmax(200px,1fr)_2.8fr] gap-6 items-center py-3 border-b border-line cursor-pointer transition-[background-color] duration-300 hover:bg-white/[0.015]"
           >
             {/* Thumbnail */}
             <div className="w-full aspect-video overflow-hidden bg-surface relative">
@@ -134,15 +134,6 @@ export default function Work() {
               </div>
             </div>
 
-            {/* Right column — hidden below md */}
-            <div className="hidden md:flex flex-col items-end gap-2 pr-2">
-              <span className="text-[0.68rem] tracking-[0.06em] text-dim text-right leading-relaxed">
-                {item.role}
-              </span>
-              <span className="text-xl text-neon opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                &#8594;
-              </span>
-            </div>
           </div>
         ))}
       </div>
