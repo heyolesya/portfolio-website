@@ -30,7 +30,7 @@ export default function Bottom() {
       <div className="grid grid-cols-[1fr_1px_1fr] gap-14 max-sm:grid-cols-1 max-sm:gap-10">
         {/* Left — About */}
         <div>
-          <h4 className="font-display text-[0.78rem] tracking-[0.2em] uppercase text-dim mb-7">
+          <h4 className="font-display text-[0.78rem] tracking-[0.2em] uppercase text-mid mb-7">
             About
           </h4>
 
@@ -46,7 +46,7 @@ export default function Bottom() {
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="text-[0.62rem] font-medium tracking-[0.08em] uppercase px-3 py-1 border border-line text-dim transition hover:text-neon hover:border-[rgba(199,139,250,0.25)]"
+                className="text-[0.75rem] font-medium tracking-[0.08em] uppercase px-3 py-1 border border-neon/30 text-neon"
               >
                 {skill}
               </span>
@@ -59,7 +59,7 @@ export default function Bottom() {
 
         {/* Right — Contact */}
         <div>
-          <h4 className="font-display text-[0.78rem] tracking-[0.2em] uppercase text-dim mb-7">
+          <h4 className="font-display text-[0.78rem] tracking-[0.2em] uppercase text-mid mb-7">
             Contact
           </h4>
 
@@ -67,12 +67,12 @@ export default function Bottom() {
             {/* Email */}
             <div>
               <a
-                href="mailto:olesya.petrochenkova@gmail.com"
+                href="mailto:heyolesia@gmail.com"
                 className="text-[0.95rem] font-medium text-white inline-block border-b border-line hover:border-neon transition-colors pb-0.5"
               >
-                olesya.petrochenkova@gmail.com
+                heyolesia@gmail.com
               </a>
-              <span className="block text-[0.62rem] tracking-[0.12em] uppercase text-dim mt-1">
+              <span className="block text-[0.62rem] tracking-[0.12em] uppercase text-mid mt-1">
                 Email
               </span>
             </div>
@@ -87,17 +87,10 @@ export default function Bottom() {
               >
                 linkedin.com/in/olesiapetrochenkova
               </a>
-              <span className="block text-[0.62rem] tracking-[0.12em] uppercase text-dim mt-1">
+              <span className="block text-[0.62rem] tracking-[0.12em] uppercase text-mid mt-1">
                 LinkedIn
               </span>
             </div>
-
-            {/* Note */}
-            <p className="text-[0.78rem] text-dim leading-relaxed mt-4">
-              Los Angeles &amp; Bay Area, California.
-              <br />
-              Open to TV, digital, music, and branded content projects.
-            </p>
           </div>
         </div>
       </div>

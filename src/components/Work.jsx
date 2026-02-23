@@ -67,18 +67,29 @@ export default function Work() {
               key={item.id}
               className="reveal group relative aspect-video overflow-hidden bg-surface cursor-pointer"
             >
-              {/* Background thumbnail */}
-              <div
-                className={`absolute inset-0 ${item.thumbClass} transition-[transform,filter] duration-[600ms,400ms] saturate-[0.5] brightness-75 group-hover:scale-[1.04] group-hover:saturate-100 group-hover:brightness-100`}
-              />
-
-              {/* Placeholder label */}
-              <span className="absolute inset-0 flex items-center justify-center text-[0.6rem] tracking-[0.14em] uppercase text-dim">
-                thumbnail
-              </span>
+              {/* Background thumbnail / Video */}
+              {item.videoUrl ? (
+                <iframe
+                  src={item.videoUrl}
+                  className="absolute inset-0 w-full h-full"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  frameBorder="0"
+                  title={item.title}
+                />
+              ) : (
+                <>
+                  <div
+                    className={`absolute inset-0 ${item.thumbClass} transition-[transform,filter] duration-[600ms,400ms] saturate-[0.5] brightness-75 group-hover:scale-[1.04] group-hover:saturate-100 group-hover:brightness-100`}
+                  />
+                  <span className="absolute inset-0 flex items-center justify-center text-[0.6rem] tracking-[0.14em] uppercase text-dim">
+                    thumbnail
+                  </span>
+                </>
+              )}
 
               {/* Overlay */}
-              <div className="absolute inset-0 z-[1] flex flex-col justify-end p-7 bg-gradient-to-t from-black/100 to-transparent opacity-75 transition-opacity duration-300 group-hover:opacity-100">
+              <div className={`absolute inset-0 z-[1] flex flex-col justify-end p-7 bg-gradient-to-t ${item.videoUrl ? 'from-black/70' : 'from-black/100'} to-transparent opacity-75 transition-opacity duration-300 group-hover:opacity-100 ${item.videoUrl ? 'pointer-events-none' : ''}`}>
                 <span className="text-[0.58rem] font-semibold tracking-[0.14em] uppercase text-neon mb-1.5">
                   {item.category}
                 </span>
@@ -103,12 +114,25 @@ export default function Work() {
           >
             {/* Thumbnail */}
             <div className="w-full aspect-video overflow-hidden bg-surface relative">
-              <div
-                className={`w-full h-full ${item.thumbClass} transition-[transform,filter] duration-[500ms,400ms] saturate-[0.6] brightness-[0.85] group-hover:scale-[1.04] group-hover:saturate-100 group-hover:brightness-100`}
-              />
-              <span className="absolute inset-0 flex items-center justify-center text-[0.55rem] tracking-[0.14em] uppercase text-dim">
-                thumbnail
-              </span>
+              {item.videoUrl ? (
+                <iframe
+                  src={item.videoUrl}
+                  className="absolute inset-0 w-full h-full"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  frameBorder="0"
+                  title={item.title}
+                />
+              ) : (
+                <>
+                  <div
+                    className={`w-full h-full ${item.thumbClass} transition-[transform,filter] duration-[500ms,400ms] saturate-[0.6] brightness-[0.85] group-hover:scale-[1.04] group-hover:saturate-100 group-hover:brightness-100`}
+                  />
+                  <span className="absolute inset-0 flex items-center justify-center text-[0.55rem] tracking-[0.14em] uppercase text-dim">
+                    thumbnail
+                  </span>
+                </>
+              )}
             </div>
 
             {/* Info */}

@@ -1,31 +1,34 @@
 export const featuredProjects = [
   {
     id: "f1",
-    category: "TV · Live Show",
-    filterCat: "tv",
+    category: "TV · Live",
+    filterCat: "live",
     title: "MTV Unplugged",
     meta: "Senior Producer · Paramount",
     thumbClass: "t1",
+    videoUrl: "https://www.youtube.com/embed/YQjNnP293PM",
   },
   {
     id: "f2",
-    category: "YouTube",
-    filterCat: "youtube",
-    title: "Multi-Million Subscriber Channel",
-    meta: "Content Producer · The Infographics Show",
+    category: "Commercial",
+    filterCat: "commercial",
+    title: "Believe in Love",
+    meta: "Line Producer · Campaign",
     thumbClass: "t2",
+    videoUrl: "https://player.vimeo.com/video/948496815",
   },
 ];
 
 export const projects = [
   {
     id: "p1",
-    category: "Music Video",
-    filterCat: "music",
-    title: "NCT127 Special",
-    details: ["Paramount", "Digital & Broadcast", "Music"],
+    category: "TV · Live",
+    filterCat: "live",
+    title: "NCT127 - Superhuman",
+    details: ["Senior Producer", "MTV"],
     role: "Producer",
     thumbClass: "t3",
+    videoUrl: "https://www.youtube.com/embed/kfvq7MyspiU",
   },
   {
     id: "p2",
@@ -76,30 +79,31 @@ export const projects = [
     id: "p7",
     category: "Podcast",
     filterCat: "podcast",
-    title: "BraveMaker Podcast",
+    title: "Yana Chu Podcast",
     details: ["Nonprofit", "Independent Film", "Audio Storytelling"],
     role: "Podcast Producer",
     thumbClass: "t9",
+    videoUrl: "https://www.youtube.com/embed/OypxbwU4_2E",
   },
 ];
 
 export const filters = [
   { label: "All", value: "all" },
-  { label: "TV & Live", value: "tv" },
+  { label: "TV", value: "tv" },
+  { label: "Live", value: "live" },
   { label: "Music Videos", value: "music" },
   { label: "Commercials", value: "commercial" },
   { label: "YouTube", value: "youtube" },
   { label: "Animation", value: "animation" },
   { label: "Podcast", value: "podcast" },
+  { label: "Documentaries", value: "documentary" },
 ];
 
 export const skills = [
-  "TV Production",
-  "YouTube",
-  "Music Videos",
-  "Commercials",
-  "Animation",
-  "Podcast",
-  "Social Strategy",
-  "Analytics",
+  "Content Production",
+  "Creative Strategy",
+  "Content Strategy",
+  "Project Management",
+  "Music Business",
+  "Entertainment",
 ];
