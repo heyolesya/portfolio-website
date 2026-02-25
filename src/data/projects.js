@@ -2,7 +2,7 @@ export const featuredProjects = [
   {
     id: "f1",
     category: "TV · Live",
-    filterCat: "live",
+    filterCat: ["tv", "live"],
     title: "MTV Unplugged",
     meta: "Senior Producer · Paramount",
     thumbClass: "t1",
@@ -11,7 +11,7 @@ export const featuredProjects = [
   {
     id: "f2",
     category: "Commercial",
-    filterCat: "commercial",
+    filterCat: ["commercial"],
     title: "Believe in Love",
     meta: "Line Producer · Campaign",
     thumbClass: "t2",
@@ -23,7 +23,7 @@ export const projects = [
   {
     id: "p1",
     category: "TV · Live",
-    filterCat: "live",
+    filterCat: ["tv", "live"],
     title: "NCT127 - Superhuman",
     details: ["Senior Producer", "MTV"],
     thumbClass: "t3",
@@ -32,7 +32,7 @@ export const projects = [
   {
     id: "p5",
     category: "YouTube",
-    filterCat: "youtube",
+    filterCat: ["youtube"],
     title: "The Infographics Show",
     details: ["Content Producer"],
     thumbClass: "t7",
@@ -41,7 +41,7 @@ export const projects = [
   {
     id: "p2",
     category: "TV",
-    filterCat: "tv",
+    filterCat: ["tv"],
     title: "This Is Normal",
     details: ["Senior Producer", "Paramount", "Social Campaign"],
     thumbClass: "t4",
@@ -50,8 +50,8 @@ export const projects = [
   {
     id: "p3",
     category: "Commercial",
-    filterCat: "commercial",
-    title: "Moscow Film School",
+    filterCat: ["commercial"],
+    title: "Film School",
     details: ["Producer"],
     thumbClass: "t5",
     videoUrl: "https://player.vimeo.com/video/948501315",
@@ -59,7 +59,7 @@ export const projects = [
   {
     id: "p4",
     category: "Music Video",
-    filterCat: "music",
+    filterCat: ["music"],
     title: "Tattooin",
     details: ["Producer"],
     thumbClass: "t6",
@@ -68,8 +68,8 @@ export const projects = [
   {
     id: "p6",
     category: "Documentary · TV",
-    filterCat: "documentary",
-    title: "Fashion Label Campaigns",
+    filterCat: ["documentary", "tv"],
+    title: "Netlenka: Brainstorm Story",
     details: ["Senior Producer", "Creative Producer", "MTV", "Paramount"],
     thumbClass: "t8",
     videoUrl: "https://www.youtube.com/embed/7zgTJ4u5v9g",
@@ -77,7 +77,7 @@ export const projects = [
   {
     id: "p7",
     category: "Podcast",
-    filterCat: "podcast",
+    filterCat: ["podcast"],
     title: "Yana Chu Podcast",
     details: ["Senior Producer", "YouTube"],
     thumbClass: "t9",

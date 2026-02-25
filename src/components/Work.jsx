@@ -26,12 +26,12 @@ export default function Work() {
   const filteredFeatured =
     activeFilter === "all"
       ? featuredProjects
-      : featuredProjects.filter((p) => p.filterCat === activeFilter);
+      : featuredProjects.filter((p) => p.filterCat.includes(activeFilter));
 
   const filteredProjects =
     activeFilter === "all"
       ? projects
-      : projects.filter((p) => p.filterCat === activeFilter);
+      : projects.filter((p) => p.filterCat.includes(activeFilter));
 
   return (
     <section id="work" className="relative px-[4rem] bg-white max-sm:px-[1.25rem] sm:max-md:px-[2rem]" ref={sectionRef}>
@@ -143,14 +143,14 @@ export default function Work() {
               <h4 className="font-display text-[clamp(1.4rem,2.5vw,2.2rem)] tracking-wide uppercase text-blue leading-tight transition-colors duration-300 group-hover:text-black">
                 {item.title}
               </h4>
-              <div className="flex gap-4 mt-0.5">
+              <div className="flex gap-4 mt-0.5 items-center">
                 {item.details.map((detail, i) => (
                   <span
                     key={i}
                     className="text-[0.75rem] text-mid flex items-center gap-1"
                   >
                     {i > 0 && (
-                      <span className="w-[3px] h-[3px] bg-light rounded-full" />
+                      <span className="w-[3px] h-[3px] bg-light rounded-full shrink-0" />
                     )}
                     {detail}
                   </span>

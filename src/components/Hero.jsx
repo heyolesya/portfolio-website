@@ -48,25 +48,25 @@ export default function Hero() {
           className="pointer-events-auto relative z-2 mt-10 flex items-end justify-between border-t-2 border-blue pt-6 max-sm:flex-col max-sm:items-start max-sm:gap-6"
           style={{ animation: "fadeUp 0.8s ease 0.6s forwards", opacity: 0 }}
         >
-          <p className="max-w-[480px] text-[1.1rem] leading-[1.65] text-dark">
+          <p className="max-w-[480px] text-[1.65rem] leading-[1.65] text-dark">
             <span className="font-bold text-blue">From Paramount's biggest stages to scrappy YouTube launches</span> — 10 years bringing structure to creative chaos and making sure great stories actually ship.
           </p>
 
           <div className="flex gap-12 text-right max-sm:text-left">
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[2.2rem] tracking-wide text-blue">10 YRS</span>
+              <span className="font-display text-[3rem] tracking-wide text-blue">10 YRS</span>
               <span className="text-[0.8rem] font-semibold uppercase tracking-[0.12em] text-black">Experience</span>
             </div>
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[2.2rem] tracking-wide text-blue">20+</span>
+              <span className="font-display text-[3rem] tracking-wide text-blue">20+</span>
               <span className="text-[0.8rem] font-semibold uppercase tracking-[0.12em] text-black">Music Videos</span>
             </div>
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[2.2rem] tracking-wide text-blue">60+</span>
+              <span className="font-display text-[3rem] tracking-wide text-blue">60+</span>
               <span className="text-[0.8rem] font-semibold uppercase tracking-[0.12em] text-black">TV Projects</span>
             </div>
             <div className="flex flex-col gap-0.5">
-              <span className="font-display text-[2.2rem] tracking-wide text-blue">700+</span>
+              <span className="font-display text-[3rem] tracking-wide text-blue">700+</span>
               <span className="text-[0.8rem] font-semibold uppercase tracking-[0.12em] text-black">YouTube Videos</span>
             </div>
           </div>
