@@ -15,7 +15,7 @@ export default function Hero() {
           >
             Content
             <br />
-            <span className="inline-block pl-[clamp(1rem,5vw,6rem)] font-serif text-[1.15em] font-normal italic normal-case tracking-wide">
+            <span className="inline-block pl-[clamp(0.25rem,3vw,6rem)] font-serif text-[1.15em] max-sm:text-[1em] font-normal italic normal-case tracking-wide">
               Producer
             </span>
           </h1>

@@ -25,9 +25,9 @@ export default function Bottom() {
     <section
       id="info"
       ref={sectionRef}
-      className="reveal bg-bg pt-[5rem] pb-[2rem] px-[4rem] mt-16 max-sm:px-[1.25rem] sm:max-md:px-[2rem]"
+      className="reveal bg-bg pt-[5rem] pb-[2rem] px-[4rem] mt-16 max-sm:px-[1.25rem] sm:max-lg:px-[2rem]"
     >
-      <div className="grid grid-cols-[1fr_1px_1fr] gap-14 max-sm:grid-cols-1 max-sm:gap-10">
+      <div className="grid grid-cols-[1fr_1px_1fr] gap-14 max-sm:grid-cols-1 max-sm:gap-10 sm:max-lg:gap-8">
         {/* Left — About */}
         <div>
           <h4 className="font-display text-[1.3rem] tracking-[0.2em] uppercase text-blue mb-8">
