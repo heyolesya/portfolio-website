@@ -15,33 +15,25 @@ export default function Hero() {
           >
             Content
             <br />
-            {/* Play Showreel button — positioned above the "r" in Producer */}
-            <span className="inline-block pl-[clamp(1rem,5vw,6rem)]">
-              <button
-                type="button"
-                className="group pointer-events-auto relative z-3 mb-4 flex cursor-pointer items-center gap-4 border-none bg-transparent ml-[clamp(4rem,11vw,10.5rem)]"
-                style={{ animation: "fadeUp 0.8s ease 1s both" }}
-                onClick={() => setLightboxOpen(true)}
-              >
-                <span className="flex h-[72px] w-[72px] items-center justify-center rounded-full border-2 border-blue transition-all duration-[400ms] group-hover:scale-[1.08] group-hover:bg-blue">
-                  <span
-                    className="ml-1 block h-0 w-0 transition-all duration-[400ms]"
-                    style={{
-                      borderTop: "9px solid transparent",
-                      borderBottom: "9px solid transparent",
-                      borderLeft: "16px solid #2A2AFF",
-                    }}
-                  />
-                </span>
-                <span className="font-display text-[0.9rem] uppercase tracking-[0.22em] text-blue transition-colors duration-300">
-                  Play Showreel
-                </span>
-              </button>
-              <span className="pointer-events-none font-serif text-[1.15em] font-normal italic normal-case tracking-wide text-blue">
-                Producer
-              </span>
+            <span className="inline-block pl-[clamp(1rem,5vw,6rem)] font-serif text-[1.15em] font-normal italic normal-case tracking-wide">
+              Producer
             </span>
           </h1>
+
+          {/* Play Showreel button — positioned at CONTENT baseline, right of text */}
+          <button
+            type="button"
+            className="group absolute top-[38%] left-1/2 z-3 flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-4 border-none bg-transparent"
+            style={{ animation: "fadeUp 0.8s ease 1s both" }}
+            onClick={() => setLightboxOpen(true)}
+          >
+            <span className="play-circle flex h-[72px] w-[72px] items-center justify-center rounded-full border-2 border-blue transition-all duration-[400ms] group-hover:scale-[1.08] group-hover:bg-blue">
+              <span className="play-triangle ml-1 block h-0 w-0 transition-all duration-[400ms]" />
+            </span>
+            <span className="font-display text-[0.9rem] uppercase tracking-[0.22em] text-blue transition-colors duration-300">
+              Play Showreel
+            </span>
+          </button>
         </div>
 
         {/* ── Hero bottom ── */}
@@ -81,6 +73,15 @@ export default function Hero() {
           @keyframes fadeUp {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
+          }
+          .play-triangle {
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-left: 16px solid #2A2AFF;
+            transition: border-color 0.4s;
+          }
+          .group:hover .play-triangle {
+            border-left-color: #FFFFFF;
           }
         `}</style>
       </section>
