@@ -19,7 +19,7 @@ export default function Hero() {
             <span className="inline-block pl-[clamp(1rem,5vw,6rem)]">
               <button
                 type="button"
-                className="group pointer-events-auto relative z-3 mb-4 flex cursor-pointer items-center gap-4 border-none bg-transparent"
+                className="group pointer-events-auto relative z-3 mb-4 flex cursor-pointer items-center gap-4 border-none bg-transparent ml-[clamp(4rem,11vw,10.5rem)]"
                 style={{ animation: "fadeUp 0.8s ease 1s both" }}
                 onClick={() => setLightboxOpen(true)}
               >
