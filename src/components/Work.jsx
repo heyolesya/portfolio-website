@@ -34,7 +34,7 @@ export default function Work() {
       : projects.filter((p) => p.filterCat.includes(activeFilter));
 
   return (
-    <section id="work" className="relative px-[4rem] bg-white max-sm:px-[1.25rem] sm:max-lg:px-[2rem]" ref={sectionRef}>
+    <section id="work" className="relative px-[4rem] bg-white max-sm:px-[1.25rem] sm:max-lg:px-[2rem] scroll-mt-[100px]" ref={sectionRef}>
       {/* Header */}
       <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between pt-[5rem] pb-8 border-b-2 border-blue mb-8">
         <span className="font-display text-[1.1rem] tracking-[0.2em] uppercase text-blue">

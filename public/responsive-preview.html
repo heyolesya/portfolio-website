@@ -223,40 +223,41 @@
      ================================================================ */
   .compare-stage {
     position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    display: flex; align-items: center; justify-content: center;
+    display: flex; align-items: flex-end; justify-content: center;
     padding-top: 56px;
+    padding-bottom: 40px;
   }
 
   .compare-container {
     position: relative;
     width: 92vw;
-    height: calc(100vh - 76px);
+    height: calc(100vh - 120px);
   }
 
   .compare-laptop {
     position: absolute;
-    top: 48%; left: 50%;
-    transform: translate(-50%, -52%) scale(0.44);
-    transform-origin: center center;
+    bottom: 0; left: 2%;
+    transform: scale(0.48);
+    transform-origin: bottom left;
     z-index: 1;
   }
 
   .compare-tablet {
     position: absolute;
-    bottom: 2%; right: 10%;
-    transform: scale(0.48);
+    bottom: 0; right: 12%;
+    transform: scale(0.38);
     transform-origin: bottom right;
     z-index: 2;
   }
-  .compare-tablet .tablet-frame .screen { width: 768px; height: 1024px; }
+  .compare-tablet .tablet-frame .screen { width: 1024px; height: 768px; }
   .compare-tablet .tablet-frame .screen iframe {
-    width: 768px; height: 1024px; border: none; display: block;
+    width: 1024px; height: 768px; border: none; display: block;
   }
 
   .compare-phone {
     position: absolute;
-    bottom: 0; right: 2%;
-    transform: scale(0.85);
+    bottom: 0; right: 5%;
+    transform: scale(0.32);
     transform-origin: bottom right;
     z-index: 3;
   }
@@ -306,6 +307,9 @@
     .tablet-portrait .device-scaler,
     .tablet-landscape .device-scaler { transform: scale(0.5); }
     .laptop-view .device-scaler { transform: scale(0.38); }
+    .compare-laptop { transform: scale(0.35); }
+    .compare-tablet { transform: scale(0.28); }
+    .compare-phone { transform: scale(0.24); }
   }
   @media (max-width: 900px) {
     .phone-portrait .device-scaler { transform: scale(0.72); }
@@ -315,6 +319,9 @@
     .laptop-view .device-scaler { transform: scale(0.35); }
     .bar { gap: 2px; padding: 8px 10px; }
     .bar-btn { padding: 7px 12px; font-size: 12px; }
+    .compare-laptop { transform: scale(0.32); }
+    .compare-tablet { transform: scale(0.26); }
+    .compare-phone { transform: scale(0.22); }
   }
 </style>
 </head>
