@@ -18,7 +18,7 @@ export default function Nav() {
         Olesia Petrochenkova
       </a>
 
-      <ul className="flex gap-9">
+      <ul className="hidden sm:flex sm:max-md:gap-5 gap-9">
         {[
           ["Work", "#work"],
           ["About", "#info"],
@@ -27,7 +27,7 @@ export default function Nav() {
           <li key={label}>
             <a
               href={href}
-              className="text-[0.95rem] font-semibold tracking-[0.1em] uppercase text-black hover:text-blue transition-colors duration-300"
+              className="sm:max-md:text-[0.8rem] text-[0.95rem] font-semibold tracking-[0.1em] uppercase text-black hover:text-blue transition-colors duration-300"
             >
               {label}
             </a>

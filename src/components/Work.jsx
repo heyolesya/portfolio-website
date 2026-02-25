@@ -36,12 +36,12 @@ export default function Work() {
   return (
     <section id="work" className="relative px-[4rem] bg-white max-sm:px-[1.25rem] sm:max-md:px-[2rem]" ref={sectionRef}>
       {/* Header */}
-      <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between pt-[5rem] pb-8 border-b-2 border-blue mb-8">
+      <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between pt-[5rem] pb-8 border-b-2 border-blue mb-8">
         <span className="font-display text-[1.1rem] tracking-[0.2em] uppercase text-blue">
           Selected Work
         </span>
 
-        <div className="flex gap-1">
+        <div className="flex flex-wrap gap-x-1 gap-y-1.5">
           {filters.map((f) => (
             <button
               key={f.value}
@@ -140,7 +140,7 @@ export default function Work() {
               <span className="text-[0.65rem] font-semibold tracking-[0.14em] uppercase text-black">
                 {item.category}
               </span>
-              <h4 className="font-display text-[clamp(1.4rem,2.5vw,2.2rem)] tracking-wide uppercase text-blue leading-tight transition-colors duration-300 group-hover:text-black">
+              <h4 className="font-display text-[clamp(1.4rem,2.5vw,2.2rem)] tracking-wide uppercase text-black leading-tight transition-colors duration-300 group-hover:text-blue">
                 {item.title}
               </h4>
               <div className="flex gap-4 mt-0.5 items-center">
