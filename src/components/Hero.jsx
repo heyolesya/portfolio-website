@@ -15,37 +15,38 @@ export default function Hero() {
           >
             Content
             <br />
-            <span className="inline-block pl-[clamp(0.25rem,3vw,6rem)] font-serif text-[1.15em] max-sm:text-[1em] font-normal italic normal-case tracking-wide">
-              Producer
+            <span className="inline-flex items-center gap-[clamp(0.5rem,1.5vw,1.5rem)] pl-[clamp(0.25rem,3vw,6rem)]">
+              <span className="font-serif text-[1.15em] max-sm:text-[1em] font-normal italic normal-case tracking-wide">
+                Producer
+              </span>
+              {/* Play Showreel — inline after Producer (sm and up) */}
+              <button
+                type="button"
+                className="group hidden sm:inline-flex items-center gap-1.5 md:gap-2 xl:gap-3 cursor-pointer border-none bg-transparent shrink-0"
+                style={{ animation: "fadeUp 0.8s ease 1s both" }}
+                onClick={() => setLightboxOpen(true)}
+              >
+                <span className="play-circle flex h-[36px] w-[36px] md:h-[44px] md:w-[44px] xl:h-[60px] xl:w-[60px] items-center justify-center rounded-full border-2 border-blue shrink-0 xl:transition-all xl:duration-[400ms] xl:group-hover:scale-[1.08] xl:group-hover:bg-blue">
+                  <span className="play-triangle ml-0.5 block h-0 w-0 xl:transition-all xl:duration-[400ms]" />
+                </span>
+                <span className="font-display text-[0.55rem] md:text-[0.7rem] xl:text-[0.85rem] tracking-[0.18em] text-blue xl:transition-colors xl:duration-300 whitespace-nowrap">
+                  Play Showreel
+                </span>
+              </button>
             </span>
           </h1>
 
-          {/* Mobile/Tablet Play Showreel — in flow */}
+          {/* Phone portrait Play Showreel — below title */}
           <button
             type="button"
-            className="group flex xl:hidden items-center gap-3 mt-6 max-sm:mt-4 cursor-pointer border-none bg-transparent"
+            className="group flex sm:hidden items-center gap-3 mt-4 cursor-pointer border-none bg-transparent"
             style={{ animation: "fadeUp 0.8s ease 1s both" }}
             onClick={() => setLightboxOpen(true)}
           >
-            <span className="play-circle flex h-[56px] w-[56px] max-sm:h-[48px] max-sm:w-[48px] items-center justify-center rounded-full border-2 border-blue">
+            <span className="play-circle flex h-[48px] w-[48px] items-center justify-center rounded-full border-2 border-blue">
               <span className="play-triangle ml-1 block h-0 w-0" />
             </span>
-            <span className="font-display text-[0.85rem] max-sm:text-[0.75rem] uppercase tracking-[0.22em] text-blue">
-              Play Showreel
-            </span>
-          </button>
-
-          {/* Desktop Play Showreel button — absolute positioned (xl and up) */}
-          <button
-            type="button"
-            className="group absolute top-[44%] left-1/2 z-3 hidden xl:flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-4 border-none bg-transparent"
-            style={{ animation: "fadeUp 0.8s ease 1s both" }}
-            onClick={() => setLightboxOpen(true)}
-          >
-            <span className="play-circle flex h-[72px] w-[72px] items-center justify-center rounded-full border-2 border-blue transition-all duration-[400ms] group-hover:scale-[1.08] group-hover:bg-blue">
-              <span className="play-triangle ml-1 block h-0 w-0 transition-all duration-[400ms]" />
-            </span>
-            <span className="font-display text-[0.9rem] uppercase tracking-[0.22em] text-blue transition-colors duration-300">
+            <span className="font-display text-[0.75rem] uppercase tracking-[0.22em] text-blue">
               Play Showreel
             </span>
           </button>
