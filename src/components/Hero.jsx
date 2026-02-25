@@ -10,7 +10,7 @@ export default function Hero() {
         {/* ── Play Showreel button ── */}
         <button
           type="button"
-          className="group absolute top-[42%] left-1/2 z-3 flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-4 border-none bg-transparent"
+          className="group absolute right-[4rem] top-1/2 z-3 flex -translate-y-1/2 cursor-pointer items-center gap-4 border-none bg-transparent max-sm:right-[1.25rem] sm:max-md:right-[2rem]"
           style={{ animation: "fadeUp 0.8s ease 1s both" }}
           onClick={() => setLightboxOpen(true)}
         >
@@ -52,7 +52,7 @@ export default function Hero() {
             <span className="font-bold text-blue">From Paramount's biggest stages to scrappy YouTube launches</span> — 10 years bringing structure to creative chaos and making sure great stories actually ship.
           </p>
 
-          <div className="flex gap-12 text-right max-sm:text-left">
+          <div className="flex gap-12 text-right max-sm:text-left self-end shrink-0">
             <div className="flex flex-col gap-0.5">
               <span className="font-display text-[3rem] tracking-wide text-blue">10 YRS</span>
               <span className="text-[0.8rem] font-semibold uppercase tracking-[0.12em] text-black">Experience</span>
