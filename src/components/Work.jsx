@@ -30,15 +30,17 @@ export default function Work() {
     return () => observer.disconnect();
   }, [activeFilter]);
 
+  const allProjects = [...featuredProjects, ...projects];
+
   const filteredFeatured =
     activeFilter === "all"
       ? featuredProjects
-      : featuredProjects.filter((p) => p.filterCat.includes(activeFilter));
+      : allProjects.filter((p) => p.filterCat.includes(activeFilter)).slice(0, 2);
 
   const filteredProjects =
     activeFilter === "all"
       ? projects
-      : projects.filter((p) => p.filterCat.includes(activeFilter));
+      : allProjects.filter((p) => p.filterCat.includes(activeFilter)).slice(2);
 
   return (
     <section id="work" className="relative px-[4rem] bg-white max-sm:px-[1.25rem] sm:max-lg:px-[2rem] scroll-mt-[100px]" ref={sectionRef}>
@@ -108,7 +110,7 @@ export default function Work() {
                   </div>
                   {/* Meta — always visible, bottom-left */}
                   <span className="absolute bottom-5 left-6 font-body text-[0.7rem] text-white/80 [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.6))]">
-                    {item.meta}
+                    {item.meta ?? item.details?.join(" · ")}
                   </span>
                 </div>
               )}

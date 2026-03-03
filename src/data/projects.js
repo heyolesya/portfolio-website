@@ -2,7 +2,7 @@ export const featuredProjects = [
   {
     id: "f1",
     category: "TV · Live",
-    filterCat: ["tv", "live"],
+    filterCat: ["tv", "live", "music"],
     title: "MTV Unplugged",
     meta: "Senior Producer · Paramount",
     thumbClass: "t1",
@@ -25,7 +25,7 @@ export const projects = [
   {
     id: "p1",
     category: "TV · Live",
-    filterCat: ["tv", "live"],
+    filterCat: ["tv", "live", "music"],
     title: "NCT127 - Superhuman",
     details: ["Senior Producer", "MTV"],
     thumbClass: "t3",
@@ -35,7 +35,7 @@ export const projects = [
   {
     id: "p5",
     category: "YouTube",
-    filterCat: ["youtube"],
+    filterCat: ["youtube", "animation"],
     title: "The Infographics Show",
     details: ["Content Producer"],
     thumbClass: "t7",
@@ -85,7 +85,7 @@ export const projects = [
   {
     id: "p7",
     category: "Podcast",
-    filterCat: ["podcast"],
+    filterCat: ["podcast", "youtube"],
     title: "Yana Chu Podcast",
     details: ["Senior Producer", "YouTube"],
     thumbClass: "t9",
