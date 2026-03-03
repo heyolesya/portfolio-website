@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Thumbnail working directories
+thumbnails-source/
+thumbnails-color/
+thumbnails-hd/
+thumbnails-text/
+thumbnails-ps-processed/
+.playwright-mcp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

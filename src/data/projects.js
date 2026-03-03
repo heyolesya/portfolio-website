@@ -6,6 +6,7 @@ export const featuredProjects = [
     title: "MTV Unplugged",
     meta: "Senior Producer · Paramount",
     thumbClass: "t1",
+    thumbImg: "/thumbnails/mtv-unplugged.jpg",
     videoUrl: "https://www.youtube.com/embed/YQjNnP293PM",
   },
   {
@@ -15,6 +16,7 @@ export const featuredProjects = [
     title: "Believe in Love",
     meta: "Line Producer · Campaign",
     thumbClass: "t2",
+    thumbImg: "/thumbnails/believe-in-love.jpg",
     videoUrl: "https://player.vimeo.com/video/948496815",
   },
 ];
@@ -27,6 +29,7 @@ export const projects = [
     title: "NCT127 - Superhuman",
     details: ["Senior Producer", "MTV"],
     thumbClass: "t3",
+    thumbImg: "/thumbnails/nct127-superhuman.jpg",
     videoUrl: "https://www.youtube.com/embed/kfvq7MyspiU",
   },
   {
@@ -36,6 +39,7 @@ export const projects = [
     title: "The Infographics Show",
     details: ["Content Producer"],
     thumbClass: "t7",
+    thumbImg: "/thumbnails/infographics-show.jpg",
     videoUrl: "https://www.youtube.com/embed/NGAEmKW5_Oc",
   },
   {
@@ -45,6 +49,7 @@ export const projects = [
     title: "This Is Normal",
     details: ["Senior Producer", "Paramount", "Social Campaign"],
     thumbClass: "t4",
+    thumbImg: "/thumbnails/this-is-normal.jpg",
     videoUrl: "https://player.vimeo.com/video/948512687",
   },
   {
@@ -54,6 +59,7 @@ export const projects = [
     title: "Film School",
     details: ["Producer"],
     thumbClass: "t5",
+    thumbImg: "/thumbnails/film-school.jpg",
     videoUrl: "https://player.vimeo.com/video/948501315",
   },
   {
@@ -63,6 +69,7 @@ export const projects = [
     title: "Tattooin",
     details: ["Producer"],
     thumbClass: "t6",
+    thumbImg: "/thumbnails/tattooin.jpg",
     videoUrl: "https://www.youtube.com/embed/BL1wZO3St_g",
   },
   {
@@ -72,6 +79,7 @@ export const projects = [
     title: "Netlenka: Brainstorm Story",
     details: ["Senior Producer", "Creative Producer", "MTV", "Paramount"],
     thumbClass: "t8",
+    thumbImg: "/thumbnails/netlenka-brainstorm.jpg",
     videoUrl: "https://www.youtube.com/embed/7zgTJ4u5v9g",
   },
   {
@@ -81,6 +89,7 @@ export const projects = [
     title: "Yana Chu Podcast",
     details: ["Senior Producer", "YouTube"],
     thumbClass: "t9",
+    thumbImg: "/thumbnails/yana-chu-podcast.jpg",
     videoUrl: "https://www.youtube.com/embed/OypxbwU4_2E",
   },
 ];
