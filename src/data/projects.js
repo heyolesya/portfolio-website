@@ -1,13 +1,13 @@
 export const featuredProjects = [
   {
-    id: "f1",
-    category: "TV · Live",
-    filterCat: ["tv", "live", "music"],
-    title: "MTV Unplugged",
-    meta: "Senior Producer · Paramount",
+    id: "f3",
+    category: "Animation · AI",
+    filterCat: ["ai", "music", "animation"],
+    title: "Hire Her Tonight",
+    meta: "Content Producer · AI",
     thumbClass: "t1",
-    thumbImg: "/thumbnails/mtv-unplugged.jpg",
-    videoUrl: "https://www.youtube.com/embed/YQjNnP293PM",
+    thumbImg: "/thumbnails/hire-her-tonight.jpg",
+    videoUrl: "https://www.youtube.com/embed/ZCmCzFAtUnI",
   },
   {
     id: "f2",
@@ -22,6 +22,16 @@ export const featuredProjects = [
 ];
 
 export const projects = [
+  {
+    id: "f1",
+    category: "TV · Live",
+    filterCat: ["tv", "live", "music"],
+    title: "MTV Unplugged",
+    details: ["Senior Producer", "Paramount"],
+    thumbClass: "t1",
+    thumbImg: "/thumbnails/mtv-unplugged.jpg",
+    videoUrl: "https://www.youtube.com/embed/YQjNnP293PM",
+  },
   {
     id: "p1",
     category: "TV · Live",
@@ -102,6 +112,7 @@ export const filters = [
   { label: "Commercials", value: "commercial" },
   { label: "YouTube", value: "youtube" },
   { label: "Animation", value: "animation" },
+  { label: "AI", value: "ai" },
   { label: "Podcast", value: "podcast" },
   { label: "Documentaries", value: "documentary" },
 ];

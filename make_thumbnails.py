@@ -15,6 +15,7 @@ VIDEOS = [
     ("infographics-show",    (0,   122, 110)),   # Teal
     ("netlenka-brainstorm",  (85,  0,   204)),   # Deep Purple
     ("yana-chu-podcast",     (192, 74,  42)),    # Terracotta
+    ("hire-her-tonight",     (192, 0,   30)),    # Crimson
     ("showreel",             (42,  42,  255)),   # Electric Blue
 ]
 
@@ -40,8 +41,8 @@ def edges_sketch(gray):
     return binary
 
 def make_thumbnail(name, bg_rgb, method="sketch"):
-    src = SRC / f"{name}.jpg"
-    if not src.exists():
+    src = next((SRC / f"{name}{ext}" for ext in (".jpg", ".png") if (SRC / f"{name}{ext}").exists()), None)
+    if src is None:
         print(f"  SKIP {name} — source not found")
         return
 
