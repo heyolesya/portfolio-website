@@ -48,16 +48,18 @@ No Framer Motion — all animations use CSS transitions/keyframes and Intersecti
 ## Data
 
 All content lives in `src/data/projects.js` with named exports:
-- `featuredProjects` — 2 large featured cards (MTV Unplugged, Believe in Love) with video embeds
-- `projects` — 7 project rows with `filterCat` for filtering, most with `videoUrl` for iframe embeds
-- `filters` — 9 filter buttons (All, TV, Live, Music Videos, Commercials, YouTube, Animation, Podcast, Documentaries)
+- `featuredProjects` — 2 large featured cards (Hire Her Tonight, Believe in Love) with custom thumbnails and video embeds
+- `projects` — 8 project rows with `filterCat` for filtering, custom `thumbImg` thumbnails, and `videoUrl` for iframe embeds
+- `filters` — 10 filter buttons (All, TV, Live, Music Videos, Commercials, YouTube, Animation, AI, Podcast, Documentaries)
 - `skills` — 6 skill tag strings (Content Production, Creative Strategy, etc.)
+
+All projects have custom line-art thumbnails (1920×1080 JPG) in `public/thumbnails/`. Active filter promotes first 2 matches to featured cards, rest go to grid.
 
 ## Key Decisions
 
 - White background with electric blue (#2A2AFF) as the sole accent color
 - Editorial list-row layout for projects (not a card grid)
-- Video iframes embedded directly in project cards (YouTube embed URLs and Vimeo player URLs)
+- Custom line-art thumbnails with click-to-play video loading (YouTube embed URLs and Vimeo player URLs)
 - Hero has a "Play Showreel" button that opens a Lightbox with Vimeo embed
 - About and Contact are combined in a single split-column Bottom section with light gray background
 - Skills shown as blue-bordered tags with hover fill effect
